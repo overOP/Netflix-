@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="input.css">
+</head>
+<body class="flex items-center justify-center bg-cover bg-center h-screen " style="background-image: url('imeges/NP-en-20241216-TRIFECTA-perspective_76746de6-1d78-441b-bf03-f98deb75294b_large.jpg');">
+  <div class="bg-black bg-opacity-50 h-screen flex items-center justify-center">
+    <div class="w-full max-w-md  bg-opacity-75 rounded-lg p-6">
+      <h1 class="text-3xl font-bold text-white mb-6">Sign In</h1>
+      <form class="space-y-4">
+        <div>
+          <label for="email" class="sr-only">Email or mobile number</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email or mobile number"
+            class="w-full px-4 py-3 bg-gray-700 text-white rounded focus:outline-none focus:ring focus:ring-red-500"
+          />
+        </div>
+        <div>
+          <label for="password" class="sr-only">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            class="w-full px-4 py-3 bg-gray-700 text-white rounded focus:outline-none focus:ring focus:ring-red-500"
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded"
+        >
+          Sign In
+        </button>
+        <div class="flex justify-between items-center mt-4 text-sm text-gray-400">
+          <a href="#" class="hover:underline">Forgot password?</a>
+          <a href="#" class="hover:underline">Sign up now</a>
+        </div>
+        <div class="mt-4 text-gray-400 text-xs text-center">
+          This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#" class="text-blue-500 hover:underline">Learn more</a>.
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
